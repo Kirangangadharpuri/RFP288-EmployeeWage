@@ -11,6 +11,7 @@ namespace EmployeeWageProblemComp
         public void Employee()
         {
             int IS_FULL_TIME = 1;
+            int IS_PART_TIME = 2;
             int EMP_RATE_PER_HOUR = 20;
             int empHrs = 0;
             int empWage = 0;
@@ -23,6 +24,11 @@ namespace EmployeeWageProblemComp
             {
                 empHrs = 8;
                 Console.WriteLine("Employee is present");
+            }
+            else if (empCheck == IS_PART_TIME)
+            {
+                empHrs = 4;
+                Console.WriteLine("Employee is working as part time");
             }
             else
             {
